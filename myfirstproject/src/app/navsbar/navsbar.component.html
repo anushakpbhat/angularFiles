@@ -1,0 +1,22 @@
+<div class="main">
+<div class="first">
+    <button class="button" style="width:300px;color:white;background-color:rgb(72, 72, 224);padding:8px;border:1.5px solid black"><span>Try if free 7 days</span> then $20/mo. thereafter</button>
+    </div>
+ 
+  <div class="form">
+    <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+        <label for="fname">First name</label>
+      <input type="text" id="fname" style="width:280px" formControlName="fname" ><br><br>
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" style="width:280px" formControlName="lname" required><br><br>
+      <div class="">
+      <label for="email">Email</label>
+      <input type="text" id="email" style="width:280px" formControlName="email"><br><br>
+      <small *ngIf="!myReactiveForm.get('email').valid && !myReactiveForm.get('email').touched">Please enter email</small>
+    </div>
+      <label for="password">Password</label>
+      <input type="text" id="password" style="width:280px" formControlName="password" ><br><br>
+    <button type="submit" style="width:290px">Submit </button>
+    </form>
+    </div>
+</div>

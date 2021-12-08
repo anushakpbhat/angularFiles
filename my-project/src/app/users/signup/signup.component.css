@@ -1,0 +1,27 @@
+body {
+    background: lightgrey;
+}
+.box {
+    display:grid;
+   width:250px;
+   height:400px;
+    grid-template-columns: auto;
+    justify-content:start;
+    
+}
+.content{
+    padding-top: 10px;
+    padding-left:20px;
+    background:lightcoral;
+    display: grid;
+    overflow: hidden;
+    padding-right:20px;
+    padding-bottom: 20px;
+}
+button{
+    padding-left:5px;
+    padding-right: 20px;
+    width:100px;
+    border-radius: 10px;
+
+}
